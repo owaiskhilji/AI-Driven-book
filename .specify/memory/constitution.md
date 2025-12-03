@@ -1,55 +1,55 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: None (initial creation) -> 1.0.0
+Modified principles:
+  - PROJECT_NAME: AI Dev Book
+  - PRINCIPLE_1_NAME: I. Spec-Driven Development
+  - PRINCIPLE_2_NAME: II. Test-First (NON-NEGOTIABLE)
+  - PRINCIPLE_3_NAME: III. Small, Iterative Changes
+  - PRINCIPLE_4_NAME: IV. Automated Testing
+  - PRINCIPLE_5_NAME: V. Clear Documentation
+  - PRINCIPLE_6_NAME: VI. Observability
+Added sections: None
+Removed sections: None
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ⚠ pending
+  - .specify/templates/spec-template.md: ⚠ pending
+  - .specify/templates/tasks-template.md: ⚠ pending
+  - .specify/templates/commands/sp.constitution.md: ✅ updated
+  - .specify/templates/commands/sp.phr.md: ⚠ pending
+Follow-up TODOs: None
+-->
+# AI Dev Book Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development
+All development starts with a clear, approved specification; Specification is the single source of truth; Changes to spec require formal review and approval.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Test-First (NON-NEGOTIABLE)
+TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Small, Iterative Changes
+Prefer small, focused commits; Each commit should address a single concern; Frequent integration to main branch.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Automated Testing
+Comprehensive unit, integration, and end-to-end tests for all features; CI/CD pipeline ensures all tests pass before deployment.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Clear Documentation
+All code must be self-documenting where possible; API contracts, architectural decisions, and complex logic must be clearly documented.
 
-### [PRINCIPLE_6_NAME]
+### VI. Observability
+Implement robust logging, metrics, and tracing for all services; Ensure critical system behaviors are observable in production.
 
+## Technical Standards
 
-[PRINCIPLE__DESCRIPTION]
+Adherence to established coding style guides; Use of approved frameworks and libraries; Security best practices applied consistently.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Workflow and Quality Gates
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Mandatory code reviews for all changes; Automated linting and static analysis tools; Regular security audits.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Constitution supersedes all other practices; Amendments require documentation, approval, and a migration plan; All PRs/reviews must verify compliance.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-02 | **Last Amended**: 2025-12-02
