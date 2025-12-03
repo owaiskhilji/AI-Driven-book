@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-organization', // Usually your GitHub org/user name.
-  projectName: 'ai-dev-book', // Usually your repo name.
+  organizationName: 'owaiskhilji', // Usually your GitHub org/user name.
+  projectName: 'AI-Driven-book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -97,7 +97,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/your-organization/ai-dev-book',
+          href: 'https://github.com/owaiskhilji/AI-Driven-book',
           label: 'GitHub',
           position: 'right',
         },
